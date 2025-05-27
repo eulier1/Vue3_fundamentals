@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3 Fundamentals</title>
+</head>
+
+<body>
+    <h1>Hello Earthlings</h1>
+    <div id="app">{{message}}</div>
+    <script type="importmap">
+        {
+            "imports": {
+            "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+            }
+        }
+    </script>
+    <script type="module">
+        import { createApp } from "vue";
+
+        const app = createApp({
+            data() {
+                return {
+                    message: "Vue with ES Modules"
+                }
+            }
+        })
+
+        app.mount("#app")
+    </script>
+
+</body>
+
+</html>
