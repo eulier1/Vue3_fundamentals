@@ -18,12 +18,17 @@
         }
     </script>
     <script type="module">
-        import { createApp } from "vue";
+        // The importmap, tells the browser, that if it find a "vue" import,
+        // fetch that resource based on the importmap script.
+        // https://caniuse.com/import-maps
+        import { createApp, ref } from "vue";
 
         const app = createApp({
-            data() {
+            // Unlike data, on the setup function, you're now in the free land of Javascript
+            setup() {
+                const message = ref("Vue with ES Modules")
                 return {
-                    message: "Vue with ES Modules"
+                    message
                 }
             }
         })

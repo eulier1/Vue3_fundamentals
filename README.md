@@ -1,7 +1,7 @@
 # Vue 3 Fundamentals
 
-Explore :
-1. Creating an application (ES Module or without it)
+## Explore :
+1. Creating an application (ES Module or without it) 
 2. Template Syntax
 3. Reactivity Fundamentals (Proxy, TargetMap, and DepsMap)
 4. Computed Properties
